@@ -6,6 +6,7 @@ import pageObjects.CheckoutPage;
 import pageObjects.ConfirmationPage;
 import pageObjects.HomePage;
 import pageObjects.ProductListingPage;
+import pageObjects.UpgradeHomePage;
 
 public class PageObjectManager {
 	private WebDriver driver;
@@ -14,6 +15,7 @@ public class PageObjectManager {
 	private HomePage homePage;
 	private CheckoutPage checkoutPage;
 	private ConfirmationPage confirmationPage;
+	private UpgradeHomePage upgradeHomePage;
 	
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
@@ -37,5 +39,9 @@ public class PageObjectManager {
 	
 	public ConfirmationPage getConfirmationPage() {
 		return (confirmationPage == null) ? confirmationPage = new ConfirmationPage(driver) : confirmationPage;
+	}
+	
+	public UpgradeHomePage getupgradeHomePage() {
+		return (upgradeHomePage == null) ? upgradeHomePage = new UpgradeHomePage(driver) : upgradeHomePage;
 	}
 }

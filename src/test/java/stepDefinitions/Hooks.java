@@ -19,10 +19,10 @@ public class Hooks {
 		testContext = context;
 	}
 	
-	@Before
-	public void beforeScenario(Scenario scenario) {
-	    Reporter.assignAuthor("ToolsQA - Lakshay Sharma");
-	}
+//	@Before
+//	public void beforeScenario(Scenario scenario) {
+////	    Reporter.assignAuthor("ToolsQABhavesh");
+//	}
 	
 	@After(order = 1)
 	public void afterScenario(Scenario scenario) {

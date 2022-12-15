@@ -36,6 +36,7 @@ public class WebDriverManager {
 	
 	private WebDriver createRemoteDriver() {
 		throw new RuntimeException("RemoteWebDriver is not yet implemented");
+		
 	}
 	
 	private WebDriver createLocalDriver() {
